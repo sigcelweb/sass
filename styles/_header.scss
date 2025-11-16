@@ -1,0 +1,44 @@
+@use "_variables.scss" as var;
+
+
+
+/* -----PISA A BOOTSTRAP con !important ---- */
+
+.navbar {
+  > .container,
+  > .container-fluid,
+  > .container-lg,
+  > .container-md,
+  > .container-sm,
+  > .container-xl,
+  > .container-xxl {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 15px !important;
+    
+    // AGREGO CON VARIABLE LA FAMILIA DE FUENTE //
+    font-family: var.$fuente;
+
+/*.nav-link.active {
+  font-weight:bold; 
+  color: var.$colorfuente;
+}*/
+  }
+}
+
+
+
+// LOGOTIPO
+.header {
+  img {
+    max-width: 18%;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+  }
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}

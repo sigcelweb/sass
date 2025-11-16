@@ -1,0 +1,132 @@
+/****** Vista para Celulares ******/
+
+@media (min-width: 320px) and (max-width: 430px) {
+
+    /* Explicación: se crea tamaño mediante un buble for para programar 
+el tamaño de los títulos desde h1 a h4 (de 0 a 3 el for) 
+en el celular con un menor tamaño que para escritorio */
+    @for $i from 0 through 3 {
+        h#{$i + 1} {
+            font-size: 2em - ($i * 0.51) !important;
+            font-weight: bold;
+        }
+    }
+
+    .footer {
+        background-color: lightgray;
+        border-radius: 11px;
+        gap: 11px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .ful {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+        gap: 11px;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .whats {
+        position: fixed;
+        bottom: 65px;
+        right: 5px;
+        z-index: 1000;
+        max-width: 50%;
+    }
+
+    .header {
+        img {
+            max-width: 47%;
+            height: auto;
+            margin: 0 auto;
+            align-items: center;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .main {
+        grid-template-areas:
+            "pu pu"
+            "n1 n1"
+            "n2 n2"
+            "n3 n3"
+            "n4 n4"
+            "n5 n5"
+            "n6 n6"
+            "n7 n7";
+    }
+
+    // Estilos comunes
+    .pu .n1,
+    .n2,
+    .n3,
+    .n4,
+    .n5,
+    .n6,
+    .n7 {
+        padding: 11px;
+        margin: 5px;
+    }
+
+    // Bloques individuales
+    .n1 {
+        background-color: lightgreen;
+        grid-area: n1;
+    }
+
+    .n2 {
+        background-color: lightslategrey;
+        grid-area: n2;
+    }
+
+    .n3 {
+        background-color: burlywood;
+        grid-area: n3;
+    }
+
+    .n4 {
+        background-color: lightgray;
+        grid-area: n4;
+    }
+
+    .n5 {
+        background-color: #fb8a00;
+        grid-area: n5;
+    }
+
+    .n6 {
+        background-color: lightblue;
+        grid-area: n6;
+    }
+
+    .n7 {
+        background-color: violet;
+        grid-area: n7;
+    }
+
+    .pu {
+        background-color: violet;
+        grid-area: pu;
+    }
+
+    .aside {
+        display: none;
+    }
+}

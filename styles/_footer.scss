@@ -1,0 +1,120 @@
+@use "_variables.scss" as var;
+
+// Mixin general para flexbox
+@mixin flexbox($direction: row, $justify: center, $align: center, $wrap: wrap, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+
+// Mixin para enlaces
+@mixin footer-link($color, $hover-color, $visited-color) {
+  text-decoration: none;
+  color: $color;
+
+  &:hover {
+    color: $hover-color;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $visited-color;
+  }
+}
+
+
+// FOOTER
+.footer {
+  background-color: lightgray;
+  border-radius: 11px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;  
+  font-family: var.$fuente;
+// llamo al mixin
+  @include flexbox(row, center, flex-end, wrap, 20px);
+
+  p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  a {
+    // llamo al mixin enlaces
+    @include footer-link(#000000, lightblue, blueviolet);
+  }
+}
+
+// Lista dentro del footer
+.ful {
+  //lamo con los parámetros al mixin para ul
+  @include flexbox(row, center, flex-end, nowrap, 20px);
+
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+
+// Enlace a WhatsApp
+.whats {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/*.footer {
+  background-color: lightgray;
+  border-radius: 11px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 20px;
+  text-align: center;
+
+  p {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+
+    &:hover {
+      color: lightblue;
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: blueviolet;
+    }
+  }
+}
+
+.ful {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+  gap: 20px;
+  align-items: end;
+}
+
+.whats {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1000;
+} */
+

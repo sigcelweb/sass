@@ -1,0 +1,14 @@
+/* Uso use en lugar de import, ya que éste está en desuso */
+
+@use "_variables.scss";
+@use "_general.scss";
+@use "_header.scss";
+@use "_main.scss";
+@use "_aside.scss";
+@use "_footer.scss";
+@use "_form.scss";
+@use "_tablets.scss";
+@use "_mobiles.scss";
+@use "_animaciones.scss";
+@use "_promos.scss";
+

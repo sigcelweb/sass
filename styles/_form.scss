@@ -1,0 +1,20 @@
+/* Formato a formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  &[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+}

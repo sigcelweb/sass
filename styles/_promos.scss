@@ -1,0 +1,17 @@
+@use "_variables.scss" as var;
+
+.promo1{
+    border: 3px solid lightsalmon;
+    background: lightcoral;
+    margin: 10px;    
+    font-family: var.$fuente;
+    font-size: 0.5em;
+    font-weight: 700; 
+    border-radius: 11px;
+    padding: 11px;
+    text-align: center;
+}
+
+.llamado1 {
+    @extend .promo1;        
+}

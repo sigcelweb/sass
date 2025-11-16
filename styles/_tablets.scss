@@ -1,0 +1,99 @@
+/*******PARA TABLETAS***********/
+@media (min-width: 431px) and (max-width: 800px) {
+
+    .n2 {
+        h2 {
+            color: #000000;
+            text-align: left;
+            font-family: 'Roboto', sans-serif !important;
+            font-weight: bold !important;
+            font-size: xx-large !important;
+            margin: 5px;
+        }
+    }
+
+    .header {
+        img {
+            max-width: 23%;
+            height: auto;
+            margin: 0 auto;
+            align-items: center;
+        }
+    }
+
+    .main {
+        grid-template-areas:
+            "pu pu"
+            "n1 n1"
+            "n2 n2"
+            /*"pub2 pub2"*/
+            "n3 n4"
+            "n5 n6"
+            "n7 .";
+    }
+
+    // Estilos comunes para n1–n7
+    .pu,
+    .n1,
+    .n2,
+    /*.pub2,*/
+    .n3,
+    .n4,
+    .n5,
+    .n6,
+    .n7 {
+        padding: 11px;
+        margin: 5px;
+    }
+
+    // Bloques individuales
+    .n1 {
+        background-color: lightgreen;
+        grid-area: n1;
+    }
+
+    .n2 {
+        background-color: lightslategrey;
+        grid-area: n2;
+    }
+
+    .n3 {
+        background-color: burlywood;
+        grid-area: n3;
+    }
+
+    .n4 {
+        background-color: lightgray;
+        grid-area: n4;
+    }
+
+    .n5 {
+        background-color: #fb8a00;
+        grid-area: n5;
+    }
+
+    .n6 {
+        background-color: lightblue;
+        grid-area: n6;
+    }
+
+    .n7 {
+        background-color: violet;
+        grid-area: n7;
+        display: none;
+    }
+
+    .pu {
+        background-color: violet;
+        grid-area: pu;
+    }
+    
+    /*.pub2 {
+        background-color: violet;
+        grid-area: pub2;
+    } */
+
+    .aside {
+        display: none;
+    }
+}

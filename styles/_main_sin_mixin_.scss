@@ -1,0 +1,88 @@
+.main {
+  display: grid;
+  grid-template-areas:
+    "nf nf nf aside"
+    "n1 n1 n1 aside"
+    "n2 n3 n4 aside"
+    "n5 n6 n7 aside";
+  align-items: stretch;
+}
+
+// Estilos comunes
+.n1,
+.n2,
+.n3,
+.n4,
+.n5,
+.n6,
+.n7,
+.nf {
+  padding: 11px;
+  margin: 5px;
+}
+
+// Bloques con sus colores y grid-area
+.n1 {
+  background-color: lightgreen;
+  grid-area: n1;
+}
+
+.n2 {
+  background-color: lightslategrey;
+  grid-area: n2;
+}
+
+.n3 {
+  background-color: burlywood;
+  grid-area: n3;
+}
+
+.n4 {
+  background-color: lightgray;
+  grid-area: n4;
+}
+
+.n5 {
+  background-color: #fb8a00;
+  grid-area: n5;
+}
+
+.n6 {
+  background-color: lightblue;
+  grid-area: n6;
+}
+
+.n7 {
+  background-color: violet;
+  grid-area: n7;
+}
+
+.nf {
+  background-color: lightgreen;
+  grid-area: nf;
+  margin-bottom: 30px;
+}
+
+.item {
+  border-radius: 11px;
+}
+
+.featimg {
+  max-width: 100%;
+  object-fit: fill;
+}
+
+.feature {
+  img {
+    &:hover {
+      transform: scale(0.98);
+    }
+  }
+}
+
+.antetitulo {
+  font-weight: bold;
+  padding: 7px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+} 

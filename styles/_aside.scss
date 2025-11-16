@@ -1,0 +1,44 @@
+/* BARRA LATERAL */
+.aside {
+  background-color: lightgoldenrodyellow;
+  grid-area: aside;
+  padding: 11px;
+  margin: 5px;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: bold !important;
+  font-size: small !important;
+  border-radius: 11px;
+  list-style-type: decimal;
+  float: right;
+  
+  ol {
+    padding: 0 0 11px 18px;
+    color: #111;
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold !important;
+    font-size: 600 !important;
+    padding: 5px;
+  }
+
+h2 {
+    color: #000000;
+    text-align: left;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold;
+    margin: 5px;
+  }
+}
+
+h3 {
+    color: #000000;
+    text-align: left;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 1.11em !important;
+  }

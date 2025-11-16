@@ -1,0 +1,94 @@
+// ----------------------------
+// MIXIN APLICADO A GRIDS
+// CREAR UN MAPA CON LA VARIABLE $blocks, 
+// donde n1 es la clase y luego va el valor (color)
+// ----------------------------
+$blocks: (
+  n1: lightgreen,
+  n2: lightslategrey,
+  n3: burlywood,
+  n4: lightgray,
+  n5: #fb8a00,
+  n6: lightblue,
+  n7: violet,
+  nf: lightgreen,
+ pu: white,
+);
+
+// ----------------------------
+// CREAR EL MIXIN PARA GENERAR CADA BLOQUE
+// El nombre de mixin es bloque
+// El mixin recibe los argumentos de nombre con $name (m*)
+// y el color con $color
+// ----------------------------
+@mixin bloque($name, $color) {
+
+  // Se utiliza .# interpolación  
+  // Insertar el valor de una variable dentro de un selector, 
+  // propiedad o nombre dinámico.
+  .#{$name} {
+    padding: 11px;
+    margin: 5px;
+    background-color: $color;
+    /*asigna color con parámetro $color*/
+    grid-area: $name;
+    /*asigna nombre de area con variable $name*/
+ 
+    // Estilo especial sólo para nf
+    @if $name == nf {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+
+// ----------------------------
+// GENERAR TODOS LOS BLOQUES CON EL LOOP EACH 
+// el loop hac 8 vueltas
+// ----------------------------
+@each $name, $color in $blocks {
+  // llamado al mixin enviando los valores name y color
+  @include bloque($name, $color);
+}
+
+// ----------------------------
+// GRID main
+// ----------------------------
+.main {
+  display: grid;
+  grid-template-areas:
+    "pu pu pu aside"
+    "n1 n1 n1 aside"
+    "n2 n3 n4 aside"
+    "n5 n6 n7 aside";
+  align-items: stretch;
+  justify-items: center;
+}
+
+// ----------------------------
+// ESTILOS 
+// ----------------------------
+.item {
+  border-radius: 11px;  
+}
+
+.featimg {
+  max-width: 100%;
+  object-fit: fill;
+}
+
+.feature {
+  img {
+    &:hover {
+      transform: scale(0.98);
+    }
+  }
+}
+
+.antetitulo {
+  font-weight: bold;
+  padding: 7px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
