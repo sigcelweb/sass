@@ -8,7 +8,7 @@ en el celular con un menor tamaño que para escritorio */
     @for $i from 0 through 3 {
         h#{$i + 1} {
             font-size: 2em - ($i * 0.51) !important;
-            font-weight: bold;
+            /*font-weight: bold;*/
         }
     }
 
@@ -74,7 +74,8 @@ en el celular con un menor tamaño que para escritorio */
     }
 
     // Estilos comunes
-    .pu .n1,
+    .pu,
+    .n1,
     .n2,
     .n3,
     .n4,
@@ -124,9 +125,10 @@ en el celular con un menor tamaño que para escritorio */
     .pu {
         background-color: violet;
         grid-area: pu;
+
     }
 
-/*    .aside {
+    /*    .aside {
         display: none;
     }*/
 }
