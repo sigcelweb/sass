@@ -42,3 +42,11 @@ h3 {
     margin: 5px;
     font-size: 1.11em !important;
   }
+
+@include mobile {
+  display: none;
+}
+
+@include tablet {
+  display: none;
+}
