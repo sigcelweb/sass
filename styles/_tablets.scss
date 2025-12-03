@@ -93,7 +93,23 @@
         grid-area: pub2;
     } */
 
- /*   .aside {
+   .aside {
         display: none;
-    }*/
+    }
+}
+
+.not {
+  display: grid;
+  grid-template-areas:
+    "no";
+  align-items:stretch; 
+    /*justify-items: center;*/
+  text-align: justify;
+  padding: 22px 0px 22px 42px;
+  margin-bottom: 20px;
+}
+
+.no {
+  background-color: white;
+  grid-area: no;
 }

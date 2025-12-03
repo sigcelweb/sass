@@ -66,6 +66,23 @@ $blocks: (
   justify-items: center;
 }
 
+.not {
+  display: grid;
+  grid-template-areas:
+    "no";
+  align-items:stretch; 
+    /*justify-items: center;*/
+  text-align: justify;
+  padding: 22px 0px 22px 48px;
+  margin-bottom: 20px;
+}
+
+.no {
+  background-color: white;
+  grid-area: no;
+}
+
+
 // ----------------------------
 // ESTILOS 
 // ----------------------------

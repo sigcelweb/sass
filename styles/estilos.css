@@ -42,9 +42,11 @@ p {
   color: #0b2206;
   font-size: 1.1em;
   /*font-family: $fuente;*/
-  font-weight: bold !important;
-  font-size: small !important;
+  /*font-weight: bold !important;*/
+  /*font-ssass --watch scss:cssize: small !important;*/
   margin-bottom: 0 !important;
+  /*text-align: justify;
+  padding-left: 22px;*/
 }
 
 /* fin formato párrafo */
@@ -175,6 +177,21 @@ a {
   grid-template-areas: "pu pu pu aside" "n1 n1 n1 aside" "n2 n3 n4 aside" "n5 n6 n7 aside";
   align-items: stretch;
   justify-items: center;
+}
+
+.not {
+  display: grid;
+  grid-template-areas: "no";
+  align-items: stretch;
+  /*justify-items: center;*/
+  text-align: justify;
+  padding: 22px 0px 22px 48px;
+  margin-bottom: 20px;
+}
+
+.no {
+  background-color: white;
+  grid-area: no;
 }
 
 .item {
@@ -429,6 +446,21 @@ input[type=text] {
     display: none;
   }
 }
+.not {
+  display: grid;
+  grid-template-areas: "no";
+  align-items: stretch;
+  /*justify-items: center;*/
+  text-align: justify;
+  padding: 22px 0px 22px 42px;
+  margin-bottom: 20px;
+}
+
+.no {
+  background-color: white;
+  grid-area: no;
+}
+
 /****** Vista para Celulares ******/
 @media (min-width: 320px) and (max-width: 430px) {
   /* Explicación: se crea tamaño mediante un buble for para programar 
@@ -436,19 +468,19 @@ input[type=text] {
   en el celular con un menor tamaño que para escritorio */
   h1 {
     font-size: 2em !important;
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
   h2 {
     font-size: 1.49em !important;
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
   h3 {
     font-size: 0.98em !important;
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
   h4 {
     font-size: 0.47em !important;
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
   .footer {
     background-color: lightgray;
@@ -495,7 +527,8 @@ input[type=text] {
   .main {
     grid-template-areas: "pu pu" "n1 n1" "n2 n2" "n3 n3" "n4 n4" "n5 n5" "n6 n6" "n7 n7";
   }
-  .pu .n1,
+  .pu,
+  .n1,
   .n2,
   .n3,
   .n4,
@@ -541,6 +574,21 @@ input[type=text] {
     display: none;
   }
 }
+.not {
+  display: grid;
+  grid-template-areas: "no";
+  align-items: stretch;
+  /*justify-items: center;*/
+  text-align: justify;
+  padding: 22px 0px 22px 22px;
+  margin-bottom: 20px;
+}
+
+.no {
+  background-color: white;
+  grid-area: no;
+}
+
 .pu {
   max-width: 100%;
   height: auto;
