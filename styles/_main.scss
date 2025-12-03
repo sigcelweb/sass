@@ -12,7 +12,7 @@ $blocks: (
   n6: lightblue,
   n7: violet,
   nf: lightgreen,
- pu: white,
+  pu: white,
 );
 
 // ----------------------------
@@ -33,9 +33,9 @@ $blocks: (
     /*asigna color con parámetro $color*/
     grid-area: $name;
     /*asigna nombre de area con variable $name*/
- 
+
     // Estilo especial sólo para nf
-    @if $name == nf {
+    @if $name ==nf {
       margin-bottom: 30px;
     }
   }
@@ -70,7 +70,7 @@ $blocks: (
 // ESTILOS 
 // ----------------------------
 .item {
-  border-radius: 11px;  
+  border-radius: 11px;
 }
 
 .featimg {
