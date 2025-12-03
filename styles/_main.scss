@@ -64,22 +64,43 @@ $blocks: (
     "n5 n6 n7 aside";
   align-items: stretch;
   justify-items: center;
+  background-color: var(n1);
+}
+
+.enca {
+  display: grid;
+  grid-template-areas:
+    "enca";
+  align-items: stretch;
+  /*justify-items: center;*/
+  text-align: justify;
+  /*padding: 1em 5em 1em 5em;*/
+  margin: 0em 10em 0em 10em;
+
+}
+
+.enca {
+  background-color: white;
+  grid-area: enca;
+
 }
 
 .not {
   display: grid;
   grid-template-areas:
     "no";
-  align-items:stretch; 
-    /*justify-items: center;*/
+  align-items: stretch;
   text-align: justify;
-  padding: 22px 0px 22px 48px;
-  margin-bottom: 20px;
+  margin: 0em 9.5em 0em 8.2em;
+  margin-top: 1 em;
+  margin-bottom: 1 em;
+  line-height: 2 em;
 }
 
 .no {
   background-color: white;
   grid-area: no;
+
 }
 
 

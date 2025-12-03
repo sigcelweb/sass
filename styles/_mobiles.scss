@@ -128,23 +128,42 @@ en el celular con un menor tamaño que para escritorio */
 
     }
 
-        .aside {
+    .aside {
         display: none;
     }
 }
 
-.not {
-  display: grid;
-  grid-template-areas:
-    "no";
-  align-items:stretch; 
+.enca {
+    display: grid;
+    grid-template-areas:
+        "enca";
+    align-items: stretch;
     /*justify-items: center;*/
-  text-align: justify;
-  padding: 22px 0px 22px 22px;
-  margin-bottom: 20px;
+    text-align: left;
+    /*padding: 1em 5em 1em 5em;*/
+    margin: 0em 2em 0em 2em;
+
+}
+
+.enca {
+    background-color: white;
+    grid-area: enca;
+
+}
+
+.not {
+    display: grid;
+    grid-template-areas:
+        "no";
+    align-items: stretch;
+    text-align: justify;
+    margin: 0em 1.8em 0em 0em;
+    margin-bottom: 1 em;
+    line-height: 2 em;
 }
 
 .no {
-  background-color: white;
-  grid-area: no;
+    background-color: white;
+    grid-area: no;
+
 }
